@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f8fafc;
+}
+
+.portfolio-header{
+    text-align:center;
+    padding:80px 20px;
+    background:white;
+}
+
+.sub-title{
+    color:#f97316;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.line{
+    width:80px;
+    height:4px;
+    background:#f97316;
+    margin:15px auto;
+}
+
+.portfolio-header h1{
+    font-size:3rem;
+    font-weight:bold;
+}
+
+.description{
+    color:#64748b;
+    max-width:700px;
+    margin:20px auto;
+}
+
+.album-section{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.album-section h2{
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-5px);
+}
+
+.image-wrapper{
+    position:relative;
+}
+
+.project-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    cursor:pointer;
+}
+
+.category{
+    position:absolute;
+    top:15px;
+    left:15px;
+    color:white;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:.8rem;
+    font-weight:600;
+}
+
+.construction{
+    background:#f97316;
+}
+
+.logistics{
+    background:#2563eb;
+}
+
+.management{
+    background:#16a34a;
+}
+
+.project-info{
+    padding:20px;
+}
+
+.project-info h3{
+    font-size:1.2rem;
+    margin-bottom:12px;
+}
+
+.project-meta{
+    display:flex;
+    justify-content:space-between;
+    color:#64748b;
+}
+
+.project-meta i{
+    color:#f97316;
+    margin-right:5px;
+}
+
+.view-all-container{
+    text-align:center;
+    padding:50px;
+}
+
+#viewAllBtn{
+    background:#f97316;
+    color:white;
+    border:none;
+    padding:15px 35px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+#viewAllBtn:hover{
+    background:#ea580c;
+}
+
+.hidden-project{
+    display:none;
+}
+
+/* Lightbox */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.95);
+    z-index:999;
+    justify-content:center;
+    align-items:center;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:80vh;
+    border-radius:10px;
+}
+
+.close-btn,
+.prev-btn,
+.next-btn{
+    position:absolute;
+    background:white;
+    border:none;
+    padding:15px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.close-btn{
+    top:30px;
+    right:30px;
+}
+
+.prev-btn{
+    left:30px;
+}
+
+.next-btn{
+    right:30px;
+}
+

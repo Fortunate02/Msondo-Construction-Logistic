@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCL Company | Projects</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/projects.css">
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="../assests/mcl logo.png" alt="MCL Company" class="h-20">
+                <span class="ml-4 text-3xl font-bold luxury-text-gradient">Msondo Construction & Logistic</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div id="nav-links" class="hidden md:flex space-x-8">
+                <a href="../index.html">Home</a>
+                <a href="../Pages/services.html">Service</a>
+                <a href="../Pages/projects.html" class="text-primary">Projects</a>
+                <a href="../Pages/vacancies.html">Vacancies</a>
+                <a href="../Pages/contact.html">Contact</a>
+                <a href="../Pages/about.html">About Us</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile only) -->
+            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+                <span class="w-6 h-0.5 bg-black"></span>
+                <span class="w-6 h-0.5 bg-black"></span>
+                <span class="w-6 h-0.5 bg-black"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <section class="portfolio-header">
+
+        <p class="sub-title">OUR PORTFOLIO</p>
+
+        <div class="line"></div>
+
+        <h1>RECENT PROJECTS</h1>
+
+        <p class="description">
+            Explore our construction, logistics and project management projects.
+        </p>
+
+    </section>
+
+    <!-- Construction Album -->
+    <section class="album-section">
+
+        <h2>Construction Projects</h2>
+
+        <div class="gallery">
+
+            <div class="project-card">
+
+                <div class="image-wrapper">
+
+                    <span class="category construction">
+                        Construction
+                    </span>
+
+                    <img src="../assests/const 1.jpg" onclick="openLightbox(0)" alt="Project">
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>Seshego Main Street</h3>
+
+                    <div class="project-meta">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Polokwane
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-calendar"></i>
+                            2025
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="image-wrapper">
+
+                    <span class="category construction">
+                        Construction
+                    </span>
+
+                    <img src="../assests/const 2.jpg" onclick="openLightbox(1)" alt="Project">
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>Ivy Park Housing</h3>
+
+                    <div class="project-meta">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Polokwane
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-calendar"></i>
+                            2024
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Logistics Album -->
+    <section class="album-section">
+
+        <h2>Logistics Projects</h2>
+
+        <div class="gallery">
+
+            <div class="project-card">
+
+                <div class="image-wrapper">
+
+                    <span class="category logistics">
+                        Logistics
+                    </span>
+
+                    <img src="../assests/Logist 1.webp" onclick="openLightbox(2)" alt="Project">
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>Musina Freight Route</h3>
+
+                    <div class="project-meta">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Musina
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-calendar"></i>
+                            2025
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Project Management Album -->
+    <section class="album-section">
+
+        <h2>Project Management</h2>
+
+        <div class="gallery">
+
+            <div class="project-card hidden-project">
+
+                <div class="image-wrapper">
+
+                    <span class="category management">
+                        Project Management
+                    </span>
+
+                    <img src="../assests/Team Planning.jpg" onclick="openLightbox(3)" alt="Project">
+
+                </div>
+
+                <div class="project-info">
+
+                    <h3>Tzaneen Development Zone</h3>
+
+                    <div class="project-meta">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Tzaneen
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-calendar"></i>
+                            2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="view-all-container">
+
+        <button id="viewAllBtn">
+
+            View All Projects
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+
+        <button class="close-btn" onclick="closeLightbox()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <button class="prev-btn" onclick="changeImage(-1)">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <img id="lightboxImage">
+
+        <button class="next-btn" onclick="changeImage(1)">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+
+                <img src="../assests/mcl logo.png" alt="MCL Company" class="footer-logo">
+
+                <p>
+                    Mondo Construction & Logistic - Building excellence through precision
+                    construction and seamless logistics.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/msondos_operations_pty/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>QUICK LINKS</h3>
+
+                <ul>
+                    <li><a href="../index.html" class="text-primary">Home</a></li>
+                    <li><a href="../Pages/about.html" class="text-primary">About</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Services</a></li>
+                    <li><a href="../Pages/projects.html" class="text-primary">Projects</a></li>
+                    <li><a href="../Pages/vacancies.html" class="text-primary">vacancies</a></li>
+                    <li><a href="../Pages/contact.html" class="text-primary">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h3>SERVICES</h3>
+
+                <ul>
+                    <li><a href="../Pages/services.html" class="text-primary">Commercial Construction</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Residential Building</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Infrastructure Development</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Material Transportation</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Equipment Rental</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>GET IN TOUCH</h3>
+
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        mcl.operations.pty@gmail.com
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        +27 (64) 518 6824
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        msondos_operations_pty<br>
+                        Limpopo Polokwane 0700
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Mondo Constructions & Logistics. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms of Service</a>
+                <span>|</span>
+                <a href="https://www.instagram.com/dikolobe_technologies/">Website Builder</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="../JavaScript/projects.js"></script>
+
+</body>
+
+</html>

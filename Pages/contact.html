@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="../assests/mcl logo.png" alt="SmartBites" class="h-14">
+                <span class="ml-4 text-3xl font-bold luxury-text-gradient">Msondo Construction & Logistic</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div id="nav-links" class="hidden md:flex space-x-8">
+                <a href="../index.html">Home</a>
+                <a href="../Pages/services.html">Service</a>
+                <a href="../Pages/services.html">Projects</a>
+                <a href="../Pages/vacancies.html">Vacancies</a>
+                <a href="../Pages/contact.html">Contact</a>
+                <a href="../Pages/about.html" class="text-primary">About Us</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile only) -->
+            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+                <span class="w-6 h-0.5 bg-black"></span>
+                <span class="w-6 h-0.5 bg-black"></span>
+                <span class="w-6 h-0.5 bg-black"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- QUOTATION SECTION -->
+    <section class="quote-section">
+
+        <h1>Get a Quotation</h1>
+        <p>Select a service and fill out the form to receive a detailed quotation</p>
+
+        <div class="service-tabs">
+            <button>🏗 Construction</button>
+            <button class="active">🚚 Logistics</button>
+            <button>📋 Project Management</button>
+        </div>
+
+        <div class="quote-form-card">
+
+            <form>
+
+                <div class="grid">
+
+                    <div class="form-group">
+                        <label>Full Name *</label>
+                        <input type="text" placeholder="Full Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number *</label>
+                        <input type="text" placeholder="Phone Number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Company Name</label>
+                        <input type="text" placeholder="Your Company">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Project Type</label>
+                        <select>
+                            <option>Select a type</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Estimated Budget</label>
+                        <select>
+                            <option>Select budget range</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Expected Timeline</label>
+                        <select>
+                            <option>Select timeline</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label>Project Details *</label>
+                        <textarea rows="6"
+                            placeholder="Please describe your project requirements, scope, and any specific details..."></textarea>
+                    </div>
+
+                </div>
+
+                <button class="quote-btn">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Request Quotation
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+
+        <div class="contact-left">
+
+            <span class="small-title">GET IN TOUCH</span>
+
+            <h2>Let's Build Something<br>Great Together</h2>
+
+            <p>
+                Ready to start your next construction or logistics project?
+                Contact us today for a consultation and discover how our
+                team can bring your vision to life.
+            </p>
+
+            <div class="contact-item">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                    <small>EMAIL</small>
+                    <h4>mcl.operations.pty@gmail.com</h4>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                    <small>PHONE</small>
+                    <h4>+27 (64) 518 6824</h4>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                    <small>ADDRESS</small>
+                    <h4>msondos_operations_pty<br>Limpopo Polokwane 0700</h4>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                    <small>BUSINESS HOURS</small>
+                    <h4>
+                        Monday - Friday: 8:00 AM - 6:00 PM<br>
+                        Saturday: 9:00 AM - 2:00 PM
+                    </h4>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+
+            <form>
+
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" placeholder="Full Name">
+                </div>
+
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" placeholder="Email Address">
+                </div>
+
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="text" placeholder="Phone number">
+                </div>
+
+                <div class="form-group">
+                    <label>Service Interested In *</label>
+                    <select>
+                        <option>Select a service</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Message *</label>
+                    <textarea rows="5" placeholder="Tell us about your project..."></textarea>
+                </div>
+
+                <button class="send-btn">
+                    SEND MESSAGE
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+
+                <img src="../assests/mcl logo.png" alt="MCL Company" class="footer-logo">
+
+                <p>
+                    Mondo Construction & Logistic - Building excellence through precision
+                    construction and seamless logistics.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/msondos_operations_pty/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>QUICK LINKS</h3>
+
+                <ul>
+                    <li><a href="../index.html" class="text-primary">Home</a></li>
+                    <li><a href="../Pages/about.html" class="text-primary">About</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Services</a></li>
+                    <li><a href="../Pages/projects.html" class="text-primary">Projects</a></li>
+                    <li><a href="../Pages/vacancies.html" class="text-primary">vacancies</a></li>
+                    <li><a href="../Pages/contact.html" class="text-primary">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h3>SERVICES</h3>
+
+                <ul>
+                    <li><a href="../Pages/services.html" class="text-primary">Commercial Construction</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Residential Building</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Infrastructure Development</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Material Transportation</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Equipment Rental</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>GET IN TOUCH</h3>
+
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        mcl.operations.pty@gmail.com
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        +27 (64) 518 6824
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        msondos_operations_pty<br>
+                        Limpopo Polokwane 0700
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+
+            <h2>Stay Updated</h2>
+
+            <p>
+                Subscribe to our newsletter for the latest projects,
+                industry insights, and company news.
+            </p>
+
+            <form class="newsletter-form">
+
+                <input type="email" placeholder="Enter your email">
+
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Mondo Constructions & Logistics. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms of Service</a>
+                <span>|</span>
+                <a href="https://www.instagram.com/dikolobe_technologies/">Website Builder</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    </section>
+
+</body>
+
+</html>

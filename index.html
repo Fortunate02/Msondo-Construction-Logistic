@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+</head>
+
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader">
+    <img src="./assests/mcl logo.png" alt="MCL Logo">
+  </div>
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+
+      <!-- Logo -->
+      <div class="flex items-center">
+        <img src="./assests/mcl logo.png" alt="MCL Company" class="h-20">
+        <span class="ml-4 text-3xl font-bold luxury-text-gradient">Msondo Construction & Logistic</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div id="nav-links" class="hidden md:flex space-x-8">
+        <a href="../index.html" class="text-primary">Home</a>
+        <a href="../Pages/services.html">Service</a>
+        <a href="../Pages/projects.html">Projects</a>
+        <a href="../Pages/vacancies.html">Vacancies</a>
+        <a href="../Pages/contact.html">Contact</a>
+        <a href="../Pages/about.html">About Us</a>
+      </div>
+
+      <!-- Hamburger Button (Mobile only) -->
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+        <span class="w-6 h-0.5 bg-black"></span>
+        <span class="w-6 h-0.5 bg-black"></span>
+        <span class="w-6 h-0.5 bg-black"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- TOP BANNER -->
+
+  <div class="banner">
+    <div class="overlay">
+      <div class="banner-content">
+        <h1>Msondo Construction & Logistic</h1>
+        <h2>Our Passion Your Ambition</h2>
+        <p>Building Tomorrow's Infrastructure</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================== -->
+
+  <!-- OUR DEPARTMENTS -->
+
+  <!-- ===================================== -->
+
+  <section class="py-20 bg-gray-50">
+
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <p class="text-orange-500 font-semibold tracking-widest">
+          OUR DEPARTMENTS
+        </p>
+
+        <div class="w-24 h-1 bg-orange-500 mx-auto my-4"></div>
+
+        <h2 class="text-5xl font-bold text-gray-800 mb-6">
+          Expertise Across Every Stage of Development
+        </h2>
+
+        <p class="max-w-3xl mx-auto text-gray-600 text-lg">
+          Msondo Construction & Logistics operates through three core
+          departments that work together to deliver successful projects,
+          reliable transportation solutions, and efficient project execution.
+          Through innovation, professionalism, and teamwork, we provide
+          comprehensive services that meet the evolving needs of our clients.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- Construction -->
+
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+
+          <div class="text-orange-500 text-5xl mb-6">
+            <i class="fa-solid fa-building"></i>
+          </div>
+
+          <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Construction Department
+          </h3>
+
+          <p class="text-gray-600 mb-5">
+            Our Construction Department is responsible for delivering
+            high-quality infrastructure, commercial developments,
+            residential projects, and civil engineering works.
+            We combine skilled craftsmanship, modern equipment,
+            and strict quality standards to ensure every project
+            is completed safely, efficiently, and within budget.
+          </p>
+
+          <ul class="space-y-3 text-gray-600">
+            <li>✔ Commercial Construction</li>
+            <li>✔ Residential Building Projects</li>
+            <li>✔ Infrastructure Development</li>
+            <li>✔ Renovations & Upgrades</li>
+            <li>✔ Site Preparation & Planning</li>
+            <li>✔ Quality Assurance & Safety Compliance</li>
+          </ul>
+
+        </div>
+
+        <!-- Logistics -->
+
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+
+          <div class="text-orange-500 text-5xl mb-6">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+
+          <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Logistics Department
+          </h3>
+
+          <p class="text-gray-600 mb-5">
+            The Logistics Department ensures the smooth movement
+            of materials, equipment, and resources required for
+            project success. Supported by advanced fleet management
+            technology and real-time monitoring systems, our team
+            delivers reliable and cost-effective transportation
+            solutions across South Africa.
+          </p>
+
+          <ul class="space-y-3 text-gray-600">
+            <li>✔ Fleet Management & Tracking</li>
+            <li>✔ Material Transportation</li>
+            <li>✔ Equipment Delivery Services</li>
+            <li>✔ Route Planning & Optimization</li>
+            <li>✔ 24/7 Operational Monitoring</li>
+            <li>✔ Supply Chain Coordination</li>
+          </ul>
+
+        </div>
+
+        <!-- Project Management -->
+
+        <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+
+          <div class="text-orange-500 text-5xl mb-6">
+            <i class="fa-solid fa-diagram-project"></i>
+          </div>
+
+          <h3 class="text-3xl font-bold text-gray-800 mb-4">
+            Project Management Department
+          </h3>
+
+          <p class="text-gray-600 mb-5">
+            Our Project Management Department provides leadership,
+            coordination, and strategic oversight throughout every
+            phase of a project. By maintaining effective communication
+            between clients, suppliers, contractors, and operational
+            teams, we ensure projects are delivered on time,
+            within budget, and according to agreed specifications.
+          </p>
+
+          <ul class="space-y-3 text-gray-600">
+            <li>✔ Project Planning & Scheduling</li>
+            <li>✔ Budget & Cost Control</li>
+            <li>✔ Performance Monitoring</li>
+            <li>✔ Risk Assessment & Management</li>
+            <li>✔ Stakeholder Coordination</li>
+            <li>✔ Quality & Compliance Management</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <!-- ===================================== -->
+
+  <!-- HOW OUR DEPARTMENTS WORK TOGETHER -->
+
+  <!-- ===================================== -->
+
+  <section class="py-20 bg-gray-900 text-white">
+
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <p class="text-orange-500 font-semibold tracking-widest">
+          INTEGRATED OPERATIONS
+        </p>
+
+        <div class="w-24 h-1 bg-orange-500 mx-auto my-4"></div>
+
+        <h2 class="text-5xl font-bold mb-6">
+          Working Together For Project Success
+        </h2>
+
+        <p class="max-w-4xl mx-auto text-gray-300 text-lg">
+          The strength of Msondo Construction & Logistics lies in the
+          seamless collaboration between our Construction, Logistics,
+          and Project Management departments. Each division plays a
+          critical role in ensuring that projects are executed with
+          efficiency, safety, and excellence from start to finish.
+        </p>
+
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <div class="bg-gray-800 p-8 rounded-xl">
+          <i class="fa-solid fa-helmet-safety text-4xl text-orange-500 mb-5"></i>
+          <h3 class="text-2xl font-bold mb-3">
+            Construction Execution
+          </h3>
+          <p class="text-gray-300">
+            Delivers quality workmanship and infrastructure solutions
+            that meet client requirements and industry standards.
+          </p>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-xl">
+          <i class="fa-solid fa-truck text-4xl text-orange-500 mb-5"></i>
+          <h3 class="text-2xl font-bold mb-3">
+            Logistics Support
+          </h3>
+          <p class="text-gray-300">
+            Ensures materials, equipment, and resources arrive
+            safely and on time to maintain project momentum.
+          </p>
+        </div>
+
+        <div class="bg-gray-800 p-8 rounded-xl">
+          <i class="fa-solid fa-users-gear text-4xl text-orange-500 mb-5"></i>
+          <h3 class="text-2xl font-bold mb-3">
+            Project Oversight
+          </h3>
+          <p class="text-gray-300">
+            Coordinates planning, budgeting, scheduling, and
+            stakeholder communication to ensure project success.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <footer class="footer">
+
+    <div class="footer-container">
+
+      <!-- Company Info -->
+      <div class="footer-column company-info">
+
+        <img src="./assests/mcl logo.png" alt="MCL Company" class="footer-logo">
+
+        <p>
+          Mondo Construction & Logistic - Building excellence through precision
+          construction and seamless logistics.
+        </p>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/msondos_operations_pty/"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+
+        <h3>QUICK LINKS</h3>
+
+        <ul>
+          <li><a href="../index.html" class="text-primary">Home</a></li>
+          <li><a href="../Pages/about.html" class="text-primary">About</a></li>
+          <li><a href="../Pages/services.html" class="text-primary">Services</a></li>
+          <li><a href="../Pages/projects.html" class="text-primary">Projects</a></li>
+          <li><a href="../Pages/vacancies.html" class="text-primary">vacancies</a></li>
+          <li><a href="../Pages/contact.html" class="text-primary">Contact</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Services -->
+      <div class="footer-column">
+
+        <h3>SERVICES</h3>
+
+        <ul>
+          <li><a href="../Pages/services.html" class="text-primary">Commercial Construction</a></li>
+          <li><a href="../Pages/services.html" class="text-primary">Residential Building</a></li>
+          <li><a href="../Pages/services.html" class="text-primary">Infrastructure Development</a></li>
+          <li><a href="../Pages/services.html" class="text-primary">Material Transportation</a></li>
+          <li><a href="../Pages/services.html" class="text-primary">Equipment Rental</a></li>
+        </ul>
+
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-column">
+
+        <h3>GET IN TOUCH</h3>
+
+        <ul class="contact-info">
+          <li>
+            <i class="fa-regular fa-envelope"></i>
+            mcl.operations.pty@gmail.com
+          </li>
+
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            +27 (64) 518 6824
+          </li>
+
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            msondos_operations_pty<br>
+            Limpopo Polokwane 0700
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Mondo Constructions & Logistics. All rights reserved.
+      </p>
+
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Terms of Service</a>
+        <span>|</span>
+        <a href="https://www.instagram.com/dikolobe_technologies/">Website Builder</a>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+  <script src="./JavaScript/script.js">
+
+  </script>
+
+</body>
+
+</html>

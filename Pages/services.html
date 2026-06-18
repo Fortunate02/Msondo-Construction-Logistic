@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 h-20">
+
+            <!-- Logo -->
+            <div class="flex items-center">
+                <img src="../assests/mcl logo.png" alt="MCL Company" class="h-20">
+                <span class="ml-4 text-3xl font-bold luxury-text-gradient">Msondo Construction & Logistic</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div id="nav-links" class="hidden md:flex space-x-8">
+                <a href="../index.html">Home</a>
+                <a href="../Pages/services.html" class="text-primary">Service</a>
+                <a href="../Pages/projects.html">Projects</a>
+                <a href="../Pages/vacancies.html">Vacancies</a>
+                <a href="../Pages/contact.html">Contact</a>
+                <a href="../Pages/about.html">About Us</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile only) -->
+            <button id="hamburger" class="md:hidden flex flex-col gap-1.5 focus:outline-none">
+                <span class="w-6 h-0.5 bg-black"></span>
+                <span class="w-6 h-0.5 bg-black"></span>
+                <span class="w-6 h-0.5 bg-black"></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="capabilities">
+
+        <div class="section-header">
+            <p class="sub-title">WHAT WE OFFER</p>
+            <div class="line"></div>
+            <h1>OUR CORE CAPABILITIES</h1>
+            <p class="description">
+                Delivering integrated solutions across construction and logistics with unmatched expertise
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+
+                <span class="number">01</span>
+
+                <h2>CONSTRUCTION</h2>
+
+                <p>
+                    Comprehensive construction services from ground-breaking to final handover
+                </p>
+
+                <ul>
+                    <li>Commercial & Residential Building</li>
+                    <li>Infrastructure Development</li>
+                    <li>Renovation & Remodeling</li>
+                    <li>Project Management</li>
+                </ul>
+
+                <button>VIEW DETAILS <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card active">
+                <div class="icon active-icon">
+                    <i class="fa-solid fa-truck"></i>
+                </div>
+
+                <span class="number">02</span>
+
+                <h2>LOGISTICS</h2>
+
+                <p>
+                    End-to-end logistics solutions ensuring timely delivery and efficient operations
+                </p>
+
+                <ul>
+                    <li>Material Transportation</li>
+                    <li>Equipment Rental</li>
+                    <li>Supply Chain Management</li>
+                    <li>Warehousing Solutions</li>
+                </ul>
+
+                <button class="service-btn" onclick="openModal()" class="service-btn" onclick="openModal()">VIEW DETAILS
+                    <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+
+                <span class="number">03</span>
+
+                <h2>PROJECT MANAGEMENT</h2>
+
+                <p>
+                    Expert oversight ensuring projects are delivered on time and within budget
+                </p>
+
+                <ul>
+                    <li>Planning & Scheduling</li>
+                    <li>Quality Control</li>
+                    <li>Risk Management</li>
+                    <li>Cost Optimization</li>
+                </ul>
+
+                <button>VIEW DETAILS <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div id="logisticsModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-btn" onclick="closeModal()">✕</button>
+
+            <div class="header">
+                <div class="service-icon">🚚</div>
+
+                <div>
+                    <small>SERVICE 02</small>
+                    <h2>LOGISTICS</h2>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="stats">
+
+                <div class="stat-box">
+                    <h3>3+</h3>
+                    <span>VEHICLES IN FLEET</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>15+</h3>
+                    <span>TONS MOVED</span>
+                </div>
+
+                <div class="stat-box">
+                    <h3>24/7</h3>
+                    <span>OPERATIONS</span>
+                </div>
+
+            </div>
+
+            <p class="description">
+                Our logistics arm keeps your project moving. With a fleet of
+                modern vehicles and a dedicated operations team, we ensure
+                materials, equipment and resources arrive exactly when and
+                where they are needed.
+            </p>
+
+            <h4>Core Services</h4>
+
+            <div class="services">
+
+                <ul>
+                    <li>✔ Heavy Equipment Haulage</li>
+                    <li>✔ Cross-Border Logistics</li>
+                    <li>✔ Fleet Management & Tracking</li>
+                </ul>
+
+                <ul>
+                    <li>✔ Bulk Material Transport</li>
+                    <li>✔ Cold Chain Transport</li>
+                    <li>✔ Last-Mile Delivery</li>
+                </ul>
+
+            </div>
+
+            <div class="buttons">
+                <button class="quote-btn">REQUEST A QUOTE</button>
+                <button class="details-btn" onclick="closeModal()">
+                    CLOSE DETAILS
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <!-- Company Info -->
+            <div class="footer-column company-info">
+
+                <img src="../assests/mcl logo.png" alt="MCL Company" class="footer-logo">
+
+                <p>
+                    Mondo Construction & Logistic - Building excellence through precision
+                    construction and seamless logistics.
+                </p>
+
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/msondos_operations_pty/"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>QUICK LINKS</h3>
+
+                <ul>
+                    <li><a href="../index.html" class="text-primary">Home</a></li>
+                    <li><a href="../Pages/about.html" class="text-primary">About</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Services</a></li>
+                    <li><a href="../Pages/projects.html" class="text-primary">Projects</a></li>
+                    <li><a href="../Pages/vacancies.html" class="text-primary">vacancies</a></li>
+                    <li><a href="../Pages/contact.html" class="text-primary">Contact</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Services -->
+            <div class="footer-column">
+
+                <h3>SERVICES</h3>
+
+                <ul>
+                    <li><a href="../Pages/services.html" class="text-primary">Commercial Construction</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Residential Building</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Infrastructure Development</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Material Transportation</a></li>
+                    <li><a href="../Pages/services.html" class="text-primary">Equipment Rental</a></li>
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-column">
+
+                <h3>GET IN TOUCH</h3>
+
+                <ul class="contact-info">
+                    <li>
+                        <i class="fa-regular fa-envelope"></i>
+                        mcl.operations.pty@gmail.com
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        +27 (64) 518 6824
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        1msondos_operations_pty<br>
+                        Limpopo Polokwane 0700
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Mondo Constructions & Logistics. All rights reserved.
+            </p>
+
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <span>|</span>
+                <a href="#">Terms of Service</a>
+                <span>|</span>
+                <a href="https://www.instagram.com/dikolobe_technologies/">Website Builder</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
