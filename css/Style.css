@@ -312,3 +312,229 @@ nav * {
     color:#555;
 }
 
+#hamburger .bar{
+    transition:0.3s;
+}
+
+
+#hamburger.active .bar:nth-child(1){
+
+    transform:translateY(8px) rotate(45deg);
+
+}
+
+
+#hamburger.active .bar:nth-child(2){
+
+    opacity:0;
+
+}
+
+
+#hamburger.active .bar:nth-child(3){
+
+    transform:translateY(-8px) rotate(-45deg);
+
+}
+
+
+#mobile-menu a{
+
+    font-weight:600;
+    color:#111827;
+    border-bottom:1px solid #eee;
+
+}
+
+
+#mobile-menu a:hover{
+
+    color:#f97316;
+
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+/* ==========================
+   LARGE DESKTOP (1200px+)
+========================== */
+@media (min-width: 1200px) {
+
+    .footer-container {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    }
+
+    nav .luxury-text-gradient {
+        font-size: 2rem;
+    }
+
+}
+
+
+/* ==========================
+   TABLET (768px - 1024px)
+========================== */
+@media (max-width: 1024px) {
+
+    /* Navbar */
+    nav .luxury-text-gradient {
+        font-size: 1.5rem;
+    }
+
+    nav .h-20 {
+        height: 60px;
+    }
+
+    /* Footer */
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+    .newsletter h2 {
+        font-size: 26px;
+    }
+
+    .newsletter-form input {
+        width: 280px;
+    }
+
+}
+
+
+/* ==========================
+   MOBILE (768px and below)
+========================== */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    nav .max-w-7xl {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    nav img {
+        height: 55px !important;
+    }
+
+    .luxury-text-gradient {
+        font-size: 1rem !important;
+        max-width: 180px;
+        line-height: 1.2;
+    }
+
+    /* Mobile Menu */
+    #mobile-menu {
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    }
+
+    #mobile-menu a {
+        display: block;
+        padding: 14px 20px;
+    }
+
+    /* Cards */
+    .cards,
+    .gallery {
+        grid-template-columns: 1fr !important;
+    }
+
+    .card,
+    .project-card,
+    .service-card {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 50px 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .contact-info li {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .newsletter h2 {
+        font-size: 24px;
+    }
+
+    .newsletter p {
+        font-size: 14px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .newsletter-form input {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .newsletter-form button {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+/* ==========================
+   SMALL MOBILE (480px)
+========================== */
+@media (max-width: 480px) {
+
+    nav img {
+        height: 45px !important;
+    }
+
+    .luxury-text-gradient {
+        font-size: .85rem !important;
+        max-width: 140px;
+    }
+
+    .footer {
+        padding: 40px 15px;
+    }
+
+    .footer-column h3 {
+        font-size: 13px;
+    }
+
+    .company-info p,
+    .footer-column ul li a,
+    .contact-info li {
+        font-size: 13px;
+    }
+
+    .newsletter h2 {
+        font-size: 22px;
+    }
+
+}
