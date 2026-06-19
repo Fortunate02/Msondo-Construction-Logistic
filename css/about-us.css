@@ -82,3 +82,354 @@
         width: 100%;
     }
 }
+
+/* ================================
+   MCL GLOBAL THEME
+   White + Dark + Orange
+================================ */
+
+:root {
+    --mcl-dark: #111827;
+    --mcl-gray: #374151;
+    --mcl-light: #f8fafc;
+    --mcl-orange: #f97316;
+    --mcl-orange-dark: #ea580c;
+}
+
+
+/* BODY */
+
+body {
+    background: var(--mcl-light);
+    color: var(--mcl-dark);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+nav {
+    background: white !important;
+    border-bottom: 3px solid var(--mcl-orange);
+}
+
+nav a {
+    color: var(--mcl-dark);
+    font-weight: 600;
+    transition: .3s;
+}
+
+nav a:hover,
+.text-primary {
+    color: var(--mcl-orange) !important;
+}
+
+
+.luxury-text-gradient {
+
+    background: linear-gradient(
+        90deg,
+        #111827,
+        #f97316
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #000 !important;
+    color: #fff;
+}
+
+/* Logo Text */
+nav span {
+    color: #fff !important;
+}
+
+/* Navigation Links */
+nav a {
+    color: #fff !important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #b3b3b3 !important;
+}
+
+/* Hamburger Menu Lines */
+nav button span {
+    background-color: #fff !important;
+}
+
+/* Remove white background and shadow conflicts */
+nav.bg-white {
+    background-color: #000 !important;
+}
+
+/* Ensure all text inside navbar stays white */
+nav * {
+    color: #fff;
+}
+
+
+/* ================================
+   HERO / BANNERS
+================================ */
+
+
+.banner {
+    background:
+    linear-gradient(
+        rgba(17,24,39,.8),
+        rgba(17,24,39,.8)
+    );
+}
+
+
+.banner h1 {
+    color:white;
+}
+
+
+.banner h2,
+.banner p {
+    color:var(--mcl-orange);
+}
+
+
+
+/* ================================
+   SECTION HEADERS
+================================ */
+
+
+.sub-title {
+    color:var(--mcl-orange) !important;
+    letter-spacing:3px;
+    font-weight:700;
+}
+
+
+.line {
+    background:var(--mcl-orange)!important;
+}
+
+
+/* ================================
+   CARDS
+================================ */
+
+
+.card,
+.project-card,
+.bg-white,
+.service-card {
+
+    border-radius:18px;
+    transition:.3s;
+}
+
+
+.card:hover,
+.project-card:hover,
+.bg-white:hover {
+
+    transform:translateY(-8px);
+    box-shadow:
+    0 20px 40px rgba(249,115,22,.15);
+
+}
+
+
+/* icons */
+
+.icon,
+.text-orange-500 {
+
+    color:var(--mcl-orange)!important;
+
+}
+
+
+.icon {
+
+    background:#fff7ed;
+    border:2px solid var(--mcl-orange);
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+
+button,
+.quote-btn,
+.send-btn,
+.service-btn,
+#viewAllBtn {
+
+    background:
+    linear-gradient(
+        90deg,
+        var(--mcl-orange),
+        var(--mcl-orange-dark)
+    ) !important;
+
+    color:white !important;
+    border:none;
+    border-radius:30px;
+    padding:12px 25px;
+    font-weight:700;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+
+button:hover {
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 10px 25px rgba(249,115,22,.35);
+
+}
+
+
+
+/* ================================
+ PROJECTS
+================================ */
+
+
+.category {
+
+    background:var(--mcl-orange)!important;
+    color:white!important;
+
+}
+
+
+.project-info h3 {
+
+    color:var(--mcl-dark);
+
+}
+
+
+.project-meta i {
+
+    color:var(--mcl-orange);
+
+}
+
+
+
+/* ================================
+ FORMS
+================================ */
+
+
+input,
+textarea,
+select {
+
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:14px;
+
+}
+
+
+input:focus,
+textarea:focus,
+select:focus {
+
+    outline:none;
+
+    border-color:var(--mcl-orange);
+
+    box-shadow:
+    0 0 0 3px #fed7aa;
+
+}
+
+
+
+/* ================================
+ CONTACT
+================================ */
+
+
+.contact-section {
+
+    background:white;
+
+}
+
+
+.contact-item .icon {
+
+    width:50px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    color:var(--mcl-orange);
+
+}
+
+
+
+/* ================================
+ MODAL
+================================ */
+
+
+.modal-content {
+
+    border-top:5px solid var(--mcl-orange);
+
+}
+
+
+.stat-box h3 {
+
+    color:var(--mcl-orange);
+
+}
+
+
+
+/* ================================
+ MOBILE
+================================ */
+
+@media(max-width:768px){
+
+    .text-5xl {
+
+        font-size:2.2rem!important;
+
+    }
+
+
+    .text-3xl {
+
+        font-size:1.5rem!important;
+
+    }
+
+
+}
