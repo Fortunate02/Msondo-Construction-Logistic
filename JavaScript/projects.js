@@ -1,7 +1,7 @@
 const images = [
     "../assests/const 1.jpg",
     "../assests/const 2.jpg",
-    "../assests/Logist 1.jpg",
+    "../assests/Logist 1.webp",
     "../assests/Team Planning.jpg"
 ];
 
