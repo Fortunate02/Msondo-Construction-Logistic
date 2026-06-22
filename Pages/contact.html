@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCL Company | Contact</title>
-    <link rel="icon" type="imgae/png" href="mcl logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../assests/mcl logo.png">
     <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -80,9 +80,9 @@
         <p>Select a service and fill out the form to receive a detailed quotation</p>
 
         <div class="service-tabs">
-            <button>🏗 Construction</button>
-            <button class="active">🚚 Logistics</button>
-            <button>📋 Project Management</button>
+            <button class="service-tab" data-service="construction">🏗 Construction</button>
+            <button class="service-tab" data-service="logistics">🚚 Logistics</button>
+            <button class="service-tab" data-service="project management">📋 Project Management</button>
         </div>
 
         <div class="quote-form-card">
@@ -350,7 +350,8 @@
 
     </section>
 
-    <script src="./JavaScript/mobile.js"></script>
+    <script src="../JavaScript/mobile.js"></script>
+    <script src="../JavaScript/contact.js"></script>
 </body>
 
 </html>

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Company | Vacancies</title>
-    <link rel="icon" type="imgae/png" href="mcl logo.png">
+    <title> MCL Company | Vacancies</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="../assests/mcl logo.png">
     <link rel="stylesheet" href="../css/vacancies.css">
     <link rel="stylesheet" href="../css/Style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -135,7 +135,7 @@
                 </div>
 
                 <div class="job-buttons">
-                    <button class="btn-outline">
+                    <button class="view-btn btn-outline " onclick="openModal('site-engineer')">
                         VIEW DETAILS
                     </button>
 
@@ -167,7 +167,7 @@
                 </div>
 
                 <div class="job-buttons">
-                    <button class="btn-outline">
+                    <button class="btn-outline view-btn">
                         VIEW DETAILS
                     </button>
 
@@ -304,84 +304,6 @@
 
         </div>
 
-        <div class="job-card">
-            <h2>Senior Site Engineer</h2>
-            <p>Construction • Full-Time</p>
-
-            <button class="view-btn" onclick="openModal()">
-                View Details
-            </button>
-        </div>
-
-        <!-- Modal -->
-        <div class="modal" id="jobModal">
-            <div class="modal-content">
-
-                <button class="close-icon" onclick="closeModal()">
-                    &times;
-                </button>
-
-                <div class="category">CONSTRUCTION</div>
-
-                <h1 class="job-title">
-                    Senior Site Engineer
-                </h1>
-
-                <div class="tags">
-                    <span class="tag">📍 Business District, City</span>
-                    <span class="tag">🕒 Full-Time</span>
-                    <span class="tag">$75,000 - $95,000 / year</span>
-                    <span class="tag">📅 Deadline: 2026-06-30</span>
-                </div>
-
-                <div class="section">
-                    <h3>Job Description</h3>
-
-                    <p>
-                        We are seeking an experienced Senior Site Engineer to oversee
-                        construction operations across multiple commercial and
-                        residential projects. You will be responsible for site
-                        management, quality control, and ensuring all projects are
-                        delivered on time and within budget.
-                    </p>
-                </div>
-
-                <div class="section">
-                    <h3>Requirements</h3>
-
-                    <ul>
-                        <li>Bachelor's degree in Civil Engineering or related field</li>
-                        <li>Minimum 5 years of experience</li>
-                        <li>Professional Engineer (PE) license preferred</li>
-                        <li>Knowledge of safety regulations</li>
-                        <li>Leadership and team management skills</li>
-                    </ul>
-                </div>
-
-                <div class="section">
-                    <h3>Benefits</h3>
-
-                    <ul>
-                        <li>Health insurance</li>
-                        <li>Annual bonuses</li>
-                        <li>Professional development allowance</li>
-                        <li>Vehicle and fuel allowance</li>
-                        <li>Paid leave</li>
-                    </ul>
-                </div>
-
-                <div class="modal-actions">
-                    <button class="apply-btn">
-                        Apply Now
-                    </button>
-
-                    <button class="close-btn" onclick="closeModal()">
-                        Close
-                    </button>
-                </div>
-
-            </div>
-        </div>
 
         <!-- Footer Text -->
         <div class="career-footer">
@@ -506,7 +428,7 @@
 
     <script src="../JavaScript/application.js"></script>
     <script src="../JavaScript/vacancies.js"></script>
-    <script src="./JavaScript/mobile.js"></script>
+    <script src="../JavaScript/mobile.js"></script>
 </body>
 
 </html>

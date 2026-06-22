@@ -85,6 +85,11 @@
     color:white;
 }
 
+.service-tabs button.active {
+    background: #f97316;
+    color: white;
+    border-color: #f97316;
+}
 /* =========================
    QUOTE CARD
 ========================= */

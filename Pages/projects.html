@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MCL Company | Projects</title>
-    <link rel="icon" type="imgae/png" href="mcl logo.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../assests/mcl logo.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../css/projects.css">
@@ -119,7 +119,7 @@
 
                         <span>
                             <i class="fa-solid fa-calendar"></i>
-                           June 2026
+                            June 2026
                         </span>
 
                     </div>
@@ -287,6 +287,81 @@
 
     </div>
 
+    <!-- Video Slider Section -->
+    <section class="video-section">
+
+        <h2>PROJECT VIDEOS</h2>
+
+        <div class="video-wrapper">
+
+            <button class="slide-btn prev" onclick="slideVideo(-1)">
+                &#10094;
+            </button>
+
+
+            <div class="video-container" id="videoSlider">
+
+
+                <!-- Video 1 -->
+                <div class="video-card">
+
+                    <video controls>
+                        <source src="../videos/const video 1.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Construction Project</h3>
+
+                </div>
+
+
+                <!-- Video 2 -->
+                <div class="video-card">
+
+                    <video controls>
+                        <source src="../videos/Const Video 2.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Site Operations</h3>
+
+                </div>
+
+
+                <!-- Video 3 -->
+                <div class="video-card">
+
+                    <video controls>
+                        <source src="../videos/const video 3.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Logistics Work</h3>
+
+                </div>
+
+
+                <!-- Video 4 -->
+                <div class="video-card">
+
+                    <video controls>
+                        <source src="../videos/Logist Video 1.mp4" type="video/mp4">
+                    </video>
+
+                    <h3>Company Projects</h3>
+
+                </div>
+
+
+            </div>
+
+
+            <button class="slide-btn next" onclick="slideVideo(1)">
+                &#10095;
+            </button>
+
+
+        </div>
+
+    </section>
+
 
 
     <footer class="footer">
@@ -390,7 +465,8 @@
     </footer>
 
     <script src="../JavaScript/projects.js"></script>
-    <script src="./JavaScript/mobile.js"></script>
+    <script src="../JavaScript/mobile.js"></script>
+    <script src="../JavaScript/videos.js"></script>
 
 </body>
 
