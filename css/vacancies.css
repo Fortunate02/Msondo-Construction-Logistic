@@ -33,24 +33,6 @@ a {
     text-decoration: none;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-nav {
-    background: var(--white);
-    border-bottom: 3px solid var(--accent);
-}
-
-#nav-links a {
-    color: var(--primary);
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-#nav-links a:hover,
-#nav-links .text-primary {
-    color: var(--accent);
-}
 
 /* ================================
    CARDS

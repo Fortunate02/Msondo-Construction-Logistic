@@ -28,7 +28,7 @@
             <div id="nav-links" class="hidden md:flex space-x-8">
                 <a href="../index.html">Home</a>
                 <a href="../Pages/services.html">Service</a>
-                <a href="../Pages/services.html">Projects</a>
+                <a href="../Pages/projects.html">Projects</a>
                 <a href="../Pages/vacancies.html" class="text-primary">Vacancies</a>
                 <a href="../Pages/contact.html">Contact</a>
                 <a href="../Pages/about.html">About Us</a>
@@ -305,6 +305,7 @@
         </div>
 
 
+
         <!-- Footer Text -->
         <div class="career-footer">
             <p>
@@ -319,7 +320,82 @@
             </a>
         </div>
 
+        <!-- Job Details Modal -->
+        <div class="modal" id="jobModal">
 
+            <div class="modal-content">
+
+                <button class="close-icon" onclick="closeModal()">
+                    &times;
+                </button>
+
+                <div class="category" id="jobCategory">
+                    CONSTRUCTION
+                </div>
+
+                <h1 class="job-title" id="jobTitle">
+                    Senior Site Engineer
+                </h1>
+
+                <div class="tags">
+
+                    <span class="tag" id="jobLocation">
+                        📍 Various Project Sites
+                    </span>
+
+                    <span class="tag" id="jobType">
+                        🕒 Full-Time
+                    </span>
+
+                    <span class="tag" id="jobSalary">
+                        💰 To Be Discussed
+                    </span>
+
+                    <span class="tag" id="jobDeadline">
+                        📅 Deadline: 2026-06-30
+                    </span>
+
+                </div>
+
+                <div class="section">
+
+                    <h3>Job Description</h3>
+
+                    <p id="jobDescription"></p>
+
+                </div>
+
+                <div class="section">
+
+                    <h3>Requirements</h3>
+
+                    <ul id="jobRequirements"></ul>
+
+                </div>
+
+                <div class="section">
+
+                    <h3>Benefits</h3>
+
+                    <ul id="jobBenefits"></ul>
+
+                </div>
+
+                <div class="modal-actions">
+
+                    <button class="apply-btn" id="modalApplyBtn">
+                        Apply Now
+                    </button>
+
+                    <button class="close-btn" onclick="closeModal()">
+                        Close
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
 
 
         <footer class="footer">
