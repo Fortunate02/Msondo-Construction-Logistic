@@ -16,7 +16,7 @@ const serviceOptions = {
         'Distribution',
         'Supply Chain Management'
     ],
-    'project-management': [
+    projectmanagement: [
         'Construction Project',
         'IT Project',
         'Business Project',
@@ -52,3 +52,5 @@ tabs.forEach(tab => {
 
 // Load default active tab (Logistics)
 updateProjectTypes('logistics');
+
+
